@@ -1,0 +1,124 @@
+<!--
+  platform.xml – EMANE Platform Topology XML for 16-NEM TDMA Simulation
+
+  Explicitly defines all 16 Network Emulation Modules (NEM 1 through 16).
+  References nem.xml for MAC/PHY and transvirtual.xml for TAP transports.
+-->
+<platform>
+  <param name="otamanagergroup" value="224.1.2.3:45702"/>
+  <param name="otamanagerdevice" value="lo"/>
+  <param name="eventservicemanagergroup" value="224.1.2.4:45703"/>
+  <param name="eventservicemanagerdevice" value="lo"/>
+
+  <!-- NEM 1 -->
+  <nem id="1" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane1"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 2 -->
+  <nem id="2" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane2"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 3 -->
+  <nem id="3" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane3"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 4 -->
+  <nem id="4" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane4"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 5 -->
+  <nem id="5" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane5"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 6 -->
+  <nem id="6" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane6"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 7 -->
+  <nem id="7" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane7"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 8 -->
+  <nem id="8" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane8"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 9 -->
+  <nem id="9" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane9"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 10 -->
+  <nem id="10" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane10"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 11 -->
+  <nem id="11" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane11"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 12 -->
+  <nem id="12" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane12"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 13 -->
+  <nem id="13" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane13"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 14 -->
+  <nem id="14" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane14"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 15 -->
+  <nem id="15" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane15"/>
+    </transport>
+  </nem>
+
+  <!-- NEM 16 -->
+  <nem id="16" definition="nem.xml">
+    <transport definition="transvirtual.xml">
+      <param name="device" value="emane16"/>
+    </transport>
+  </nem>
+</platform>

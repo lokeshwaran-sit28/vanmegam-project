@@ -1,0 +1,25 @@
+<!--
+  nem.xml – Verified EMANE NEM configuration template for TDMA Radio Model
+
+  References:
+  - Manifest definition: tdmaeventschedulermaclayer.xml
+  - EMANE TDMA Model Documentation
+-->
+<nem>
+  <!-- TDMA MAC layer using the Event Scheduler plugin -->
+  <mac definition="tdmaeventschedulermaclayer.xml">
+    <param name="pcrcurveuri" value="/usr/share/emane/xml/models/mac/tdmaeventscheduler/tdmabasemodelpcr.xml"/>
+  </mac>
+  <phy>
+    <!-- Fixed antenna gain (dBi) -->
+    <param name="fixedantennagain" value="0.0"/>
+    <!-- Fixed transmit power (dBm) -->
+    <param name="txpower" value="0.0"/>
+    <!-- Noise mode: outofband = only model interference within the simulation -->
+    <param name="noisemode" value="outofband"/>
+    <!-- System noise figure (dB) -->
+    <param name="systemnoisefigure" value="4.0"/>
+    <!-- Propagation model: freespace -->
+    <param name="propagationmodel" value="freespace"/>
+  </phy>
+</nem>

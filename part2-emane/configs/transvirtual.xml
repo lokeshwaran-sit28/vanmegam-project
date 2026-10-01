@@ -1,0 +1,8 @@
+<!--
+  transvirtual.xml – Official EMANE Virtual Transport Configuration
+
+  Connects an EMANE NEM to a Linux virtual TAP network interface (emaneX).
+-->
+<transport definition="transvirtualmanifest.xml">
+  <param name="device" value="emane1"/>
+</transport>
